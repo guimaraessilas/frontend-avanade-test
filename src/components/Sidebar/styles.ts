@@ -19,12 +19,13 @@ export const SearchInput = styled.input`
   background-color: var(--color-bg);
   border-style: ridge;
   border-radius: 5px;
-  width: 380px;
+  width: calc(100% - 20px);
   `;
 
 export const ListItem = styled.div`
   padding: 16px 8px;
   border-bottom: 1px solid #cdcdcd;
+  width: calc(100% - 20px);
   &:last-child {
     margin-bottom: 0;
     border-bottom: none;

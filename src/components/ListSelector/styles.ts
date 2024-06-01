@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
 
 export const Selector = styled.select`
   padding: 8px;
-  width: 20%;
+  width: 50%;
   border: 1px solid var(--color-white);
   border-radius: 5px;
   margin-right: 8px;
@@ -43,7 +43,7 @@ export const SearchInput = styled.input
   margin: 10px 0 20px;
   color: #000;
   border: 1px solid #555;
-  width: 70%;
+  width: 40%;
 `;
 
 export const ListItem = styled.option``;

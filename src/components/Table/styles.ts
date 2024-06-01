@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TableWrapper = styled.div`
+export const TableWrapper = styled.table`
   width: 90%;
   background-color: var(--color-white);
   border-radius: 16px;
@@ -15,7 +15,7 @@ export const TableWrapper = styled.div`
   }
 `;
 
-export const TableHeader = styled.div`
+export const TableHeader = styled.th`
   display: flex;
   padding: 12px;
   background-color: #f66;
@@ -30,7 +30,7 @@ export const TableHeader = styled.div`
   }
 `;
 
-export const TableRow = styled.div`
+export const TableRow = styled.tr`
   display: flex;
   padding: 12px;
   border-bottom: 1px solid #fff;
@@ -38,13 +38,13 @@ export const TableRow = styled.div`
   &:last-child {
     border-bottom: none;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 320px) {
     padding: 16px;
+    
   }
-  
 `;
 
-export const TableCell = styled.div`
+export const TableCell = styled.th`
   flex: 1;
   text-align: center;
   padding: 4px;

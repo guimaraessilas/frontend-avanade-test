@@ -102,12 +102,12 @@ export const ContextProvider = ({ children }: { children: ReactNode }) => {
         .join("/");
     const wsUrl = `${WSURL}/stream?streams=${symbolList}`;
 
-    const { lastJsonMessage, sendJsonMessage } = useWebSocket<any>(
+    const { lastJsonMessage } = useWebSocket<any>(
         wsUrl,
         {
-            onOpen: () => console.log(`WebSocket connected`),
             onError: (event: any) => {
                 console.error(event);
+                setTradeInfo({});
             },
             onMessage: () => {
                 if (lastJsonMessage) {
@@ -122,24 +122,6 @@ export const ContextProvider = ({ children }: { children: ReactNode }) => {
         }
     );
 
-    useEffect(() => {
-        setTradeInfo({});
-        return () => {
-            setTradeInfo({});
-        };
-    }, [listsOfSymbols, selectedList]);
-
-    useEffect(() => {
-        const pingPongInterval = setInterval(() => {
-            if (lastJsonMessage) {
-                sendJsonMessage({ ping: "pong" });
-            }
-        }, 180000);
-
-        return () => {
-            clearInterval(pingPongInterval);
-        };
-    }, [lastJsonMessage, sendJsonMessage]);
 
     return (<SymbolsContext.Provider
         value={{
