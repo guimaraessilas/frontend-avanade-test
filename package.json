@@ -18,6 +18,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
+    "react-use-websocket": "^4.8.1",
+    "react-window": "^1.8.10",
+    "styled-components": "^6.1.11",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -49,5 +52,9 @@
     "hooks": {
       "pre-commit": "eslint ."
     }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react-window": "^1.8.8"
   }
 }
