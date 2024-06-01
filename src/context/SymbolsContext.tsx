@@ -105,7 +105,7 @@ export const ContextProvider = ({ children }: { children: ReactNode }) => {
     const { lastJsonMessage } = useWebSocket<any>(
         wsUrl,
         {
-            onError: (event: any) => {
+            onError: (event) => {
                 console.error(event);
                 setTradeInfo({});
             },

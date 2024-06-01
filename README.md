@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,8 +40,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React](https://reactjs.org/)
+
+- [Styled Components](https://www.npmjs.com/package/styled-components)
+
+
+## Code quality
+
+- [Husky](https://typicode.github.io/husky/#/) - Husky improves your commits and more 🐶 woof!
+- [ESLINT](https://eslint.org/) - ESLint statically analyzes your code to quickly find problems. It is built into most text editors and you can run ESLint as part of your continuous integration pipeline.
+- [Prettier](https://prettier.io/) - Prettier is an opinionated code formatter
+
+## Author
+
+**Silas Guimarães Rineiro**
+
+You can find me on:
+
+- [Linkedin](https://www.linkedin.com/in/silas-guimar%C3%A3es-65b8b6120/)
+- [Medium](https://medium.com/@guimaraessilas)
+- And here on [Github](https://github.com/guimaraessilas)
